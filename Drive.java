@@ -17,6 +17,12 @@ public class Drive{
         int prUser = sc.nextInt();
         
         calcMethods cm = new calcMethods();
-        cm.sumTotal();
+        
+        if (cm.sumTotal() == true){
+        cm.verPresupuesto(prUser);    
+        } else {
+            System.exit(0);
+        }
+        
     }
 }
